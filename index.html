@@ -3,74 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vijay's DevOps Portfolio</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>John Doe - DevOps Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Vijay's DevOps Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <h1>John Doe</h1>
+            <p class="subtitle">DevOps Engineer</p>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
+    <main class="container">
+        <section class="section">
             <h2>About Me</h2>
-            <p>I am a DevOps engineer skilled in cloud infrastructure, CI/CD, and automation, dedicated to improving software development processes.</p>
-        </div>
-    </section>
+            <p>Experienced DevOps Engineer with a passion for automating everything and building resilient infrastructure. Specializing in cloud technologies, CI/CD pipelines, and infrastructure as code.</p>
+        </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project">
-                    <h3>CI/CD Pipeline</h3>
-                    <p>Designed and implemented automated CI/CD pipelines using Jenkins, Docker, and Kubernetes.</p>
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+                    <p>AWS, Azure, Google Cloud Platform</p>
                 </div>
-                <div class="project">
-                    <h3>AWS Infrastructure Automation</h3>
-                    <p>Automated AWS infrastructure using Terraform and Ansible for a scalable, resilient application.</p>
+                <div class="skill-card">
+                    <h3><i class="fas fa-code-branch"></i> CI/CD</h3>
+                    <p>Jenkins, GitLab CI, GitHub Actions</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-container-storage"></i> Containerization</h3>
+                    <p>Docker, Kubernetes, Helm</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-code"></i> Infrastructure as Code</h3>
+                    <p>Terraform, Ansible, CloudFormation</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Cloud Platforms: AWS, Azure, GCP</li>
-                <li>CI/CD: Jenkins, GitLab CI, GitHub Actions</li>
-                <li>Infrastructure as Code: Terraform, Ansible</li>
-                <li>Containers: Docker, Kubernetes</li>
-                <li>Monitoring: Prometheus, Grafana</li>
-            </ul>
-        </div>
-    </section>
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Microservices Platform</h3>
+                    <p>Designed and implemented a scalable microservices architecture using Kubernetes, achieving 99.9% uptime.</p>
+                </div>
+                <div class="project-card">
+                    <h3>CI/CD Pipeline Optimization</h3>
+                    <p>Reduced deployment time by 70% through pipeline optimization and implementation of parallel testing.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Cloud Migration</h3>
+                    <p>Led the successful migration of legacy applications to AWS, resulting in 40% cost reduction.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="container">
+        <section class="section">
             <h2>Contact</h2>
-            <p>Email: vijay.devops@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/vijay" target="_blank">linkedin.com/in/vijay</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Vijay. All Rights Reserved.</p>
-        </div>
-    </footer>
+            <div class="contact-info">
+                <a href="mailto:john.doe@example.com"><i class="fas fa-envelope"></i> john.doe@example.com</a>
+                <a href="https://github.com/johndoe"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/johndoe"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
