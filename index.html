@@ -3,72 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dumne Vijay - DevOps Engineer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">    
+    <title>Dumne Vijay - Software Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Dumne Vijay</h1>
-            <p class="subtitle">DevOps Engineer</p>
+            <h1>DUMNE VIJAY</h1>
+            <p class="subtitle">QA Automation & Full-Stack Engineer</p>
         </div>
     </header>
 
     <main class="container">
         <section class="section">
             <h2>About Me</h2>
-            <p>Experienced DevOps Engineer with a passion for automating everything and building resilient infrastructure. Specializing in cloud technologies, CI/CD pipelines, and infrastructure as code.</p>
+            <p class="about-me-description">Aspiring software engineer with hands-on experience in both frontend and backend technologies seeking an opportunity to leverage my skills in test automation, API development, and UI implementation. Passionate about creating reliable, high-performance applications while continuing to grow my technical expertise across the full development stack. Eager to contribute my problem-solving abilities and collaborative mindset to a forward-thinking team that values innovation and quality-driven development.</p>
         </section>
 
+        <!-- Experience Section -->
+        <section class="section">
+            <h2>Experience</h2>
+            <h3 class="experience-sub-heading">Software Engineer Intern @ RapidKen.AI | 3-month Internship</h3>
+            <p class="experience-description">During my internship at RapidKen.AI, I have
+                <ul class="experience-list">
+                    <li>Implemented automated frontend testing using Selenium WebDriver, improved application stability.</li>
+                    <li>Developed comprehensive API testing frameworks using Python's unittest library, achieving 90%+ test coverage across critical endpoints.</li>
+                    <li>Conducted performance testing with Locust.</li>
+                    <li>Contributed to backend development using Python and Flask framework, implementing RESTful APIs and server-side functionalities.</li>
+                    <li>Utilized Google Colab to implement OpenAI API integrations for data collection purposes.</li>
+                    <li>Collaborated with development team to implement frontend features based on design requirements.</li>
+                    <li>Participated in agile development processes including daily stand-ups, sprint planning, and retrospectives.</li>
+                    <li>Documented testing procedures and created detailed bug reports, enhancing team communication and reducing bug resolution time.</li>
+                </ul>
+                Technologies: Python, Flask, Google Colab, OpenAI API, Selenium, unittest, Locust, HTML, CSS, JavaScript.
+            </p>
+        </section>
+        <!-- End Experience Section -->
+
+        <!-- Skills Section -->
         <section class="section">
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
-                    <p>AWS, Azure, Google Cloud Platform</p>
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <p>Develop user interfaces using HTML, CSS, and JavaScript as per the requirements of the project.</p>
                 </div>
                 <div class="skill-card">
-                    <h3><i class="fas fa-code-branch"></i> CI/CD</h3>
-                    <p>Jenkins, GitLab CI, GitHub Actions</p>
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <p>Develop APIs using Flask as per the requirements of the project.</p>
                 </div>
                 <div class="skill-card">
-                    <h3><i class="fas fa-container-storage"></i> Containerization</h3>
-                    <p>Docker, Kubernetes, Helm</p>
+                    <h3><i class="fas fa-bug"></i> Frontend Testing</h3>
+                    <p>Frontend Testing using Selenium Testing.</p>
                 </div>
                 <div class="skill-card">
-                    <h3><i class="fas fa-code"></i> Infrastructure as Code</h3>
-                    <p>Terraform, Ansible, CloudFormation</p>
+                    <h3><i class="fas fa-vial"></i> Unit Testing</h3>
+                    <p>API Testing using Pytest.</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-tachometer-alt"></i> Performance Testing</h3>
+                    <p>Performance Testing using Locust.</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-book"></i> Google Colab</h3>
+                    <p>Wrote Python scripts using Google Colab.</p>
                 </div>
             </div>
         </section>
+        <!-- End Skills Section -->
 
+        <!-- Contact Section -->
         <section class="section">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <h3>Microservices Platform</h3>
-                    <p>Designed and implemented a scalable microservices architecture using Kubernetes, achieving 99.9% uptime.</p>
-                </div>
-                <div class="project-card">
-                    <h3>CI/CD Pipeline Optimization</h3>
-                    <p>Reduced deployment time by 70% through pipeline optimization and implementation of parallel testing.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Cloud Migration</h3>
-                    <p>Led the successful migration of legacy applications to AWS, resulting in 40% cost reduction.</p>
-                </div>
-            </div>
-        </section>
+            <h2>Contact Me</h2>
+            <p>Let's get in touch. Send me a message:</p>
 
-        <section class="section">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <a href="mailto:18253c090@gmail.com"><i class="fas fa-envelope"></i> Gmail</a>
-                <a href="https://github.com/dumnevijay"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://linkedin.com/in/dumnevijay"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            </div>
-        </section>
+            <form action="mailto:18253c090@gmail.com" method="post" enctype="text/plain">
+                <p><input class="input-text" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="input-text" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="input-text" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="input-text" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="submit-btn" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+                <div class="contact-info">
+                    <p><i class="fa fa-map-marker fa-fw "></i> Hyderabad, India</p>
+                    <a href="mailto:18253c090@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Gmail</a>
+                    <a href="https://github.com/dumnevijay" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/dumnevijay" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://x.com/vijay_dumne" target="_blank"><i class="fab fa-x-twitter"></i> Twitter(X)</a>
+                </div>
+            </section>
+        <!-- End Contact Section -->
+
+        
     </main>
 </body>
 </html>
