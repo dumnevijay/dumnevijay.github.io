@@ -498,7 +498,7 @@ h4 {
 }
 
 /* Contact Section Styles */
-.contact-intro, .footer-text {
+.footer-text {
     margin-bottom: 2rem;
     text-align: center;
     font-size: 1.2rem;
@@ -511,44 +511,6 @@ h4 {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: start;
-}
-
-.contact-form {
-    background-color: var(--card-bg);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
-    font-weight: 500;
-    transition: color var(--transition-speed);
-}
-
-.input-text,
-.input-textarea {
-    width: 100%;
-    padding: 0.8rem 1rem;
-    border: 1px solid var(--input-border);
-    border-radius: var(--border-radius);
-    background-color: var(--input-bg);
-    color: var(--text-color);
-    font-family: inherit;
-    transition: border-color var(--transition-speed), background-color var(--transition-speed), color var(--transition-speed);
-}
-
-.input-text:focus,
-.input-textarea:focus {
-    outline: none;
-    border-color: var(--accent-color);
 }
 
 .submit-btn {
@@ -731,10 +693,6 @@ h4 {
 @media screen and (max-width: 768px) {
     .contact-container {
         grid-template-columns: 1fr;
-    }
-    
-    .contact-form {
-        order: 2;
     }
     
     .contact-details {
