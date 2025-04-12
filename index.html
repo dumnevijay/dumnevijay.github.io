@@ -1,106 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dumne Vijay - Software Engineer</title>
+    <title>Dumne Vijay - Software Engineer Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="stylesheets/style.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>DUMNE VIJAY</h1>
-            <p class="subtitle">QA Automation & Full-Stack Engineer</p>
+            <div class="header-content">
+                <div class="logo-area">
+                    <h1>DUMNE VIJAY</h1>
+                    <p class="subtitle">QA Automation & Full-Stack Engineer</p>
+                </div>
+                
+                <div class="header-controls">
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>
+                    </button>
+                    
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <nav id="main-nav" class="main-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main class="container">
-        <section class="section">
-            <h2>About Me</h2>
-            <p class="about-me-description">Aspiring software engineer with hands-on experience in both frontend and backend technologies seeking an opportunity to leverage my skills in test automation, API development, and UI implementation. Passionate about creating reliable, high-performance applications while continuing to grow my technical expertise across the full development stack. Eager to contribute my problem-solving abilities and collaborative mindset to a forward-thinking team that values innovation and quality-driven development.</p>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="section">
-            <h2>Experience</h2>
-            <h3 class="experience-sub-heading">Software Engineer Intern @ RapidKen.AI | 3-month Internship</h3>
-            <p class="experience-description">During my internship at RapidKen.AI, I have
-                <ul class="experience-list">
-                    <li>Implemented automated frontend testing using Selenium WebDriver, improved application stability.</li>
-                    <li>Developed comprehensive API testing frameworks using Python's unittest library, achieving 90%+ test coverage across critical endpoints.</li>
-                    <li>Conducted performance testing with Locust.</li>
-                    <li>Contributed to backend development using Python and Flask framework, implementing RESTful APIs and server-side functionalities.</li>
-                    <li>Utilized Google Colab to implement OpenAI API integrations for data collection purposes.</li>
-                    <li>Collaborated with development team to implement frontend features based on design requirements.</li>
-                    <li>Participated in agile development processes including daily stand-ups, sprint planning, and retrospectives.</li>
-                    <li>Documented testing procedures and created detailed bug reports, enhancing team communication and reducing bug resolution time.</li>
-                </ul>
-                Technologies: Python, Flask, Google Colab, OpenAI API, Selenium, unittest, Locust, HTML, CSS, JavaScript.
-            </p>
-        </section>
-        <!-- End Experience Section -->
-
-        <!-- Skills Section -->
-        <section class="section">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
-                    <p>Develop user interfaces using HTML, CSS, and JavaScript as per the requirements of the project.</p>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-server"></i> Backend</h3>
-                    <p>Develop APIs using Flask as per the requirements of the project.</p>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-bug"></i> Frontend Testing</h3>
-                    <p>Frontend Testing using Selenium Testing.</p>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-vial"></i> Unit Testing</h3>
-                    <p>API Testing using Pytest.</p>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-tachometer-alt"></i> Performance Testing</h3>
-                    <p>Performance Testing using Locust.</p>
-                </div>
-                <div class="skill-card">
-                    <h3><i class="fas fa-book"></i> Google Colab</h3>
-                    <p>Wrote Python scripts using Google Colab.</p>
+        <section id="about" class="section">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <div class="section-content">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="dumne_vijay_image.jpeg" alt="Dumne Vijay" />
+                    </div>
+                    <div class="profile-text">
+                        <p class="about-me-description">
+                            Aspiring software engineer with hands-on experience in both frontend and backend technologies seeking an opportunity to leverage my skills in test automation, API development, and UI implementation. Passionate about creating reliable, high-performance applications while continuing to grow my technical expertise across the full development stack.
+                        </p>
+                        <p class="about-me-description">
+                            Eager to contribute my problem-solving abilities and collaborative mindset to a forward-thinking team that values innovation and quality-driven development.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- End Skills Section -->
 
-        <!-- Contact Section -->
-        <section class="section">
-            <h2>Contact Me</h2>
-            <p>Let's get in touch. Send me a message:</p>
-
-            <form action="mailto:18253c090@gmail.com" method="post" enctype="text/plain">
-                <p><input class="input-text" type="text" placeholder="Name" required name="Name"></p>
-                <p><input class="input-text" type="text" placeholder="Email" required name="Email"></p>
-                <p><input class="input-text" type="text" placeholder="Subject" required name="Subject"></p>
-                <p><input class="input-text" type="text" placeholder="Message" required name="Message"></p>
-                <p>
-                    <button class="submit-btn" type="submit">
-                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                    </button>
-                </p>
-            </form>
-                <div class="contact-info">
-                    <p><i class="fa fa-map-marker fa-fw "></i> Hyderabad, India</p>
-                    <a href="mailto:18253c090@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Gmail</a>
-                    <a href="https://github.com/dumnevijay" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://linkedin.com/in/dumnevijay" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://x.com/vijay_dumne" target="_blank"><i class="fab fa-x-twitter"></i> Twitter(X)</a>
+        <section id="experience" class="section">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="section-content">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Software Engineer Intern</h3>
+                        <div class="experience-meta">
+                            <span class="company">@ RapidKen.AI</span>
+                            <span class="duration">3-month Internship</span>
+                        </div>
+                    </div>
+                    <p class="experience-description">During my internship at RapidKen.AI, I have:</p>
+                    <ul class="experience-list">
+                        <li>Implemented automated frontend testing using Selenium WebDriver, improved application stability.</li>
+                        <li>Developed comprehensive API testing frameworks using Python's unittest library, achieving 90%+ test coverage across critical endpoints.</li>
+                        <li>Conducted performance testing with Locust.</li>
+                        <li>Contributed to backend development using Python and Flask framework, implementing RESTful APIs and server-side functionalities.</li>
+                        <li>Utilized Google Colab to implement OpenAI API integrations for data collection purposes.</li>
+                        <li>Collaborated with development team to implement frontend features based on design requirements.</li>
+                        <li>Participated in agile development processes including daily stand-ups, sprint planning, and retrospectives.</li>
+                        <li>Documented testing procedures and created detailed bug reports, enhancing team communication and reducing bug resolution time.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <h4>Technologies Used:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Google Colab</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">unittest</span>
+                            <span class="tech-tag">Locust</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        <!-- End Contact Section -->
+            </div>
+        </section>
 
-        
+        <section id="skills" class="section">
+            <h2><i class="fas fa-code"></i> Skills</h2>
+            <div class="section-content">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                        <p>Develop user interfaces using HTML, CSS, and JavaScript as per the requirements of the project.</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fas fa-server"></i> Backend</h3>
+                        <p>Develop APIs using Flask as per the requirements of the project.</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fas fa-bug"></i> Frontend Testing</h3>
+                        <p>Frontend Testing using Selenium WebDriver with detailed test scenarios and reports.</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fas fa-vial"></i> API Testing</h3>
+                        <p>API Testing using Pytest with comprehensive test coverage and validation.</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fas fa-tachometer-alt"></i> Performance Testing</h3>
+                        <p>Performance Testing using Locust with detailed metrics analysis and reporting.</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3><i class="fas fa-book"></i> Data Processing</h3>
+                        <p>Python scripts for data processing and analysis using Google Colab and Jupyter Notebooks.</p>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+            <div class="section-content">
+                <div class="projects">
+                    <div class="project-card">
+                        <h3>Test Automation Framework</h3>
+                        <p class="project-description">Developed a comprehensive testing framework using Selenium and Python for frontend testing automation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">unittest</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dumnevijay/selenium-portfolio-test" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>API Testing Suite</h3>
+                        <p class="project-description">Created a robust API testing suite with Python and pytest for validating RESTful endpoints.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">pytest</span>
+                            <span class="tech-tag">Requests</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Performance Testing Dashboard</h3>
+                        <p class="project-description">Built a performance testing dashboard using Locust and Flask for visualizing test results.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Locust</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            <div class="section-content">
+                <p class="contact-intro">Let's get in touch. Send me a message:</p>
+
+                <div class="contact-container">
+                    <form class="contact-form" action="mailto:18253c090@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input id="name" class="input-text" type="text" placeholder="Your Name" required name="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" class="input-text" type="email" placeholder="Your Email" required name="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input id="subject" class="input-text" type="text" placeholder="Subject" required name="Subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="input-textarea" placeholder="Your Message" required name="Message" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="submit-btn" type="submit">
+                                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="contact-details">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Hyderabad, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:18253c090@gmail.com">18253c090@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <h4>Connect With Me</h4>
+                            <div class="social-links">
+                                <a href="https://github.com/dumnevijay" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="https://linkedin.com/in/dumnevijay" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://x.com/vijay_dumne" target="_blank" class="social-link"><i class="fab fa-x-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Dumne Vijay. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        
+        // Check for saved theme preference or use default
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        htmlElement.setAttribute('data-theme', savedTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+        
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        
+        mobileMenuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            
+            // Change icon based on menu state
+            const icon = mobileMenuToggle.querySelector('i');
+            if (mainNav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    mainNav.classList.remove('active');
+                    const icon = mobileMenuToggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+                
+                // Smooth scrolling
+                const targetId = link.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const headerHeight = document.querySelector('header').offsetHeight;
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - headerHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Add scroll event listener to highlight active section in navigation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.main-nav a');
+            const scrollPosition = window.scrollY;
+            const headerHeight = document.querySelector('header').offsetHeight;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - headerHeight - 20;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
