@@ -6,8 +6,17 @@
     <title>Dumne Vijay - Software Engineer Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="stylesheets/style.css" rel="stylesheet">
+    <meta name="description" content="Portfolio of Dumne Vijay - QA Automation & Full-Stack Engineer specializing in Python, Selenium, Flask, and modern web technologies.">
+    <meta name="keywords" content="Dumne Vijay, Software Engineer, QA Automation, Full-Stack Developer, Python, Selenium, Flask">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
     <header>
         <div class="container">
             <div class="header-content">
@@ -32,6 +41,7 @@
 
             <nav id="main-nav" class="main-nav">
                 <ul>
+                    <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -43,6 +53,44 @@
     </header>
 
     <main class="container">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Dumne Vijay</span></h1>
+                    <p class="hero-subtitle">QA Automation & Full-Stack Engineer</p>
+                    <p class="hero-description">
+                        Passionate about creating reliable software solutions through comprehensive testing and innovative development.
+                        I specialize in automation testing, API development, and building scalable web applications.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-container">
+                        <img src="dumne_vijay_image.jpeg" alt="Dumne Vijay" />
+                        <div class="hero-image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Technologies Mastered</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">DevOps</div>
+                    <div class="stat-label">Integration Ready</div>
+                </div>
+            </div>
+        </section>
+
         <section id="about" class="section">
             <h2><i class="fas fa-user"></i> About Me</h2>
             <div class="section-content">
@@ -109,21 +157,21 @@
                 <div class="skills-grid">
                     <div class="skill-card">
                         <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
-                        <p>Develop user interfaces using HTML, CSS, and JavaScript as per the requirements of the project.</p>
+                        <p>Develop user interfaces using HTML, CSS, JavaScript, and React. Build modern, responsive web applications with component-based architecture and state management.</p>
                         <div class="skill-level">
                             <div class="skill-bar" style="width: 85%"></div>
                         </div>
                     </div>
                     <div class="skill-card">
                         <h3><i class="fas fa-server"></i> Backend</h3>
-                        <p>Develop APIs using Flask as per the requirements of the project.</p>
+                        <p>Develop robust APIs using Flask and FastAPI with MongoDB integration. Build scalable backend services with webhook handling, real-time processing, and modern Python frameworks.</p>
                         <div class="skill-level">
-                            <div class="skill-bar" style="width: 80%"></div>
+                            <div class="skill-bar" style="width: 85%"></div>
                         </div>
                     </div>
                     <div class="skill-card">
                         <h3><i class="fas fa-bug"></i> Frontend Testing</h3>
-                        <p>Frontend Testing using Selenium WebDriver with detailed test scenarios and reports.</p>
+                        <p>Comprehensive frontend testing using Selenium WebDriver in Python and JavaScript. Automated test suites with screenshot capture, Page Object Model, and end-to-end user journey validation.</p>
                         <div class="skill-level">
                             <div class="skill-bar" style="width: 90%"></div>
                         </div>
@@ -157,41 +205,225 @@
             <h2><i class="fas fa-project-diagram"></i> Projects</h2>
             <div class="section-content">
                 <div class="projects">
-                    <div class="project-card">
-                        <h3>Test Automation Framework</h3>
-                        <p class="project-description">Developed a comprehensive testing framework using Selenium and Python for frontend testing automation.</p>
+                    <div class="project-card featured-project">
+                        <div class="project-header">
+                            <h3>🚀 Advanced Exam Management System</h3>
+                            <div class="project-status">
+                                <span class="status-badge featured">Featured</span>
+                            </div>
+                        </div>
+                        <p class="project-description">A modern, full-stack exam management system with AI-powered adaptive learning, real-time analytics, WebSocket monitoring, and professional PDF reports. Built with cutting-edge technologies for comprehensive exam administration.</p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-brain"></i>
+                                <span>AI-Powered Adaptive Learning</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Real-Time Analytics Dashboard</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-wifi"></i>
+                                <span>WebSocket Live Monitoring</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Professional PDF Reports</span>
+                            </div>
+                        </div>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Selenium</span>
-                            <span class="tech-tag">unittest</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React 18</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">ReportLab</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/dumnevijay/selenium-portfolio-test" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://github.com/dumnevijay/ExamManagementSystem" class="project-link primary" target="_blank">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                            <a href="https://github.com/dumnevijay/ExamManagementSystem#readme" class="project-link secondary" target="_blank">
+                                <i class="fas fa-book"></i> Documentation
+                            </a>
                         </div>
                     </div>
                     <div class="project-card">
-                        <h3>API Testing Suite</h3>
-                        <p class="project-description">Created a robust API testing suite with Python and pytest for validating RESTful endpoints.</p>
+                        <div class="project-header">
+                            <h3>🚀 My FastAPI App</h3>
+                            <div class="project-status">
+                                <span class="status-badge">Completed</span>
+                            </div>
+                        </div>
+                        <p class="project-description">A modern, asynchronous REST API built with FastAPI featuring user authentication, post management, voting system, and comprehensive API documentation.</p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-user-shield"></i>
+                                <span>JWT Authentication</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-database"></i>
+                                <span>Async PostgreSQL</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-vote-yea"></i>
+                                <span>Voting System</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-search"></i>
+                                <span>Search & Pagination</span>
+                            </div>
+                        </div>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">pytest</span>
-                            <span class="tech-tag">Requests</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">SQLAlchemy</span>
+                            <span class="tech-tag">SQLModel</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Alembic</span>
+                            <span class="tech-tag">Pydantic</span>
+                            <span class="tech-tag">Uvicorn</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://github.com/dumnevijay/my-fastapi-app" class="project-link primary" target="_blank">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                            <a href="https://github.com/dumnevijay/my-fastapi-app#readme" class="project-link secondary" target="_blank">
+                                <i class="fas fa-book"></i> Documentation
+                            </a>
                         </div>
                     </div>
                     <div class="project-card">
-                        <h3>Performance Testing Dashboard</h3>
-                        <p class="project-description">Built a performance testing dashboard using Locust and Flask for visualizing test results.</p>
+                        <div class="project-header">
+                            <h3>🧪 SauceDemo Automation</h3>
+                            <div class="project-status">
+                                <span class="status-badge">Completed</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Comprehensive QA automation testing suite for SauceDemo e-commerce platform. Automates end-to-end user journeys including login, cart operations, form validation, and checkout flow.</p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <span>Login Authentication</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Cart Operations</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-clipboard-check"></i>
+                                <span>Form Validation</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Checkout Flow</span>
+                            </div>
+                        </div>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Python 3.13+</span>
+                            <span class="tech-tag">Selenium 4.33+</span>
+                            <span class="tech-tag">WebDriver Manager</span>
+                            <span class="tech-tag">HTMLTestRunner</span>
+                            <span class="tech-tag">uv</span>
+                            <span class="tech-tag">pipx</span>
+                            <span class="tech-tag">Page Object Model</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dumnevijay/SauceDemoAutomation" class="project-link primary" target="_blank">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                            <a href="https://youtu.be/ZzI75QUtr-o" class="project-link secondary" target="_blank">
+                                <i class="fab fa-youtube"></i> Demo Video
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>🔗 GitHub Webhook Receiver</h3>
+                            <div class="project-status">
+                                <span class="status-badge">Completed</span>
+                            </div>
+                        </div>
+                        <p class="project-description">A Flask application that receives GitHub webhooks and displays repository events in real-time. Monitors push, pull request, and merge events with MongoDB storage and responsive web dashboard.</p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-webhook"></i>
+                                <span>Real-time Webhooks</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-database"></i>
+                                <span>MongoDB Integration</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Auto-refresh Dashboard</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-code-branch"></i>
+                                <span>Event Monitoring</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
                             <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">Locust</span>
-                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">PyMongo</span>
+                            <span class="tech-tag">GitHub Webhooks</span>
+                            <span class="tech-tag">ngrok</span>
+                            <span class="tech-tag">uv</span>
+                            <span class="tech-tag">Jinja2</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                            <a href="https://github.com/dumnevijay/webhook-repo" class="project-link primary" target="_blank">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                            <a href="https://github.com/dumnevijay/webhook-repo#readme" class="project-link secondary" target="_blank">
+                                <i class="fas fa-book"></i> Documentation
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>🧪 Selenium Portfolio Test</h3>
+                            <div class="project-status">
+                                <span class="status-badge">Completed</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Automated frontend testing suite using Selenium WebDriver for portfolio website UI validation. Includes screenshot capture on test failures and comprehensive test coverage for user interactions.</p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-camera"></i>
+                                <span>Screenshot on Failure</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-code"></i>
+                                <span>UI Validation</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Automated Testing</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Test Reports</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Selenium WebDriver</span>
+                            <span class="tech-tag">ChromeDriver</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">npm</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/dumnevijay/selenium-portfolio-test" class="project-link primary" target="_blank">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                            <a href="https://github.com/dumnevijay/selenium-portfolio-test#readme" class="project-link secondary" target="_blank">
+                                <i class="fas fa-book"></i> Documentation
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -202,6 +434,31 @@
             <h2><i class="fas fa-envelope"></i> Contact Me</h2>
             <div class="section-content">
                 <div class="contact-container">
+                    <div class="contact-form-container">
+                        <h3>Send me a message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
                     <div class="contact-details">
                         <div class="contact-card">
                             <div class="contact-icon">
@@ -241,7 +498,23 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script>
+        // Loading Screen
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loading-screen');
+            setTimeout(() => {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+        
         // Theme Toggle Functionality
         const themeToggle = document.getElementById('theme-toggle');
         const htmlElement = document.documentElement;
@@ -298,6 +571,16 @@
             });
         });
         
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mainNav.contains(e.target) && !mobileMenuToggle.contains(e.target) && mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
         // Add scroll event listener to highlight active section in navigation
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('.section');
@@ -319,6 +602,80 @@
                     });
                 }
             });
+        });
+        
+        // Contact Form Handling
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                const name = formData.get('name');
+                const email = formData.get('email');
+                const subject = formData.get('subject');
+                const message = formData.get('message');
+                
+                // Create mailto link
+                const mailtoLink = `mailto:18253c090@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+                    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+                )}`;
+                
+                // Open email client
+                window.location.href = mailtoLink;
+                
+                // Reset form
+                this.reset();
+                
+                // Show success message (you could enhance this with a proper modal)
+                alert('Thank you for your message! Your email client has been opened.');
+            });
+        }
+        
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections for animation
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('back-to-top');
+        if (backToTopBtn) {
+            // Show/hide button based on scroll position
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            });
+            
+            // Scroll to top when clicked
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+        
+        // Set project status badges
+        document.querySelectorAll('.status-badge').forEach(badge => {
+            const text = badge.textContent.toLowerCase();
+            badge.setAttribute('data-status', text.replace(' ', '-'));
         });
     </script>
 </body>
