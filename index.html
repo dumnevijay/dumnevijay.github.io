@@ -6,8 +6,17 @@
     <title>Dumne Vijay - Software Engineer Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="stylesheets/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <meta name="description" content="Portfolio of Dumne Vijay - QA Automation & Full-Stack Engineer specializing in Python, Selenium, Flask, and modern web technologies.">
     <meta name="keywords" content="Dumne Vijay, Software Engineer, QA Automation, Full-Stack Developer, Python, Selenium, Flask">
+    <meta name="author" content="Dumne Vijay">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Dumne Vijay - Software Engineer Portfolio">
+    <meta property="og:description" content="QA Automation & Full-Stack Engineer specializing in Python, Selenium, Flask, and modern web technologies">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -56,7 +65,7 @@
         <!-- Hero Section -->
         <section id="hero" class="hero-section">
             <div class="hero-content">
-                <div class="hero-text">
+                <div class="hero-text animate-in">
                     <h1 class="hero-title">Hi, I'm <span class="highlight">Dumne Vijay</span></h1>
                     <p class="hero-subtitle">QA Automation & Full-Stack Engineer</p>
                     <p class="hero-description">
@@ -68,14 +77,14 @@
                         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
                 </div>
-                <div class="hero-image">
+                <div class="hero-image animate-in-delay-1">
                     <div class="hero-image-container">
                         <img src="dumne_vijay_image.jpeg" alt="Dumne Vijay" />
                         <div class="hero-image-overlay"></div>
                     </div>
                 </div>
             </div>
-            <div class="hero-stats">
+            <div class="hero-stats animate-in-delay-2">
                 <div class="stat">
                     <div class="stat-number">5+</div>
                     <div class="stat-label">Projects Completed</div>
@@ -94,7 +103,7 @@
         <section id="about" class="section">
             <h2><i class="fas fa-user"></i> About Me</h2>
             <div class="section-content">
-                <div class="profile-container">
+                <div class="profile-container animate-in">
                     <div class="profile-image">
                         <img src="dumne_vijay_image.jpeg" alt="Dumne Vijay" />
                     </div>
@@ -113,7 +122,7 @@
         <section id="experience" class="section">
             <h2><i class="fas fa-briefcase"></i> Experience</h2>
             <div class="section-content">
-                <div class="experience-card">
+                <div class="experience-card animate-in">
                     <div class="experience-header">
                         <h3 class="experience-title">Software Engineer Intern</h3>
                         <div class="experience-meta">
@@ -155,42 +164,42 @@
             <h2><i class="fas fa-code"></i> Skills</h2>
             <div class="section-content">
                 <div class="skills-grid">
-                    <div class="skill-card">
+                    <div class="skill-card animate-in">
                         <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
                         <p>Develop user interfaces using HTML, CSS, JavaScript, and React. Build modern, responsive web applications with component-based architecture and state management.</p>
                         <div class="skill-level">
                             <div class="skill-bar" style="width: 85%"></div>
                         </div>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card animate-in-delay-1">
                         <h3><i class="fas fa-server"></i> Backend</h3>
                         <p>Develop robust APIs using Flask and FastAPI with MongoDB integration. Build scalable backend services with webhook handling, real-time processing, and modern Python frameworks.</p>
                         <div class="skill-level">
                             <div class="skill-bar" style="width: 85%"></div>
                         </div>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card animate-in-delay-2">
                         <h3><i class="fas fa-bug"></i> Frontend Testing</h3>
                         <p>Comprehensive frontend testing using Selenium WebDriver in Python and JavaScript. Automated test suites with screenshot capture, Page Object Model, and end-to-end user journey validation.</p>
                         <div class="skill-level">
                             <div class="skill-bar" style="width: 90%"></div>
                         </div>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card animate-in-delay-3">
                         <h3><i class="fas fa-vial"></i> API Testing</h3>
                         <p>API Testing using Pytest with comprehensive test coverage and validation.</p>
                         <div class="skill-level">
                             <div class="skill-bar" style="width: 85%"></div>
                         </div>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card animate-in">
                         <h3><i class="fas fa-tachometer-alt"></i> Performance Testing</h3>
                         <p>Performance Testing using Locust with detailed metrics analysis and reporting.</p>
                         <div class="skill-level">
                             <div class="skill-bar" style="width: 75%"></div>
                         </div>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card animate-in-delay-1">
                         <h3><i class="fas fa-book"></i> Data Processing</h3>
                         <p>Python scripts for data processing and analysis using Google Colab and Jupyter Notebooks.</p>
                         <div class="skill-level">
@@ -632,24 +641,100 @@
             });
         }
         
-        // Add animation on scroll
+        // Enhanced scroll animations with stagger effect
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
-        
+
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
+            entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
+                    setTimeout(() => {
+                        entry.target.classList.add('animate-in');
+                    }, index * 100); // Stagger animation
                 }
             });
         }, observerOptions);
-        
-        // Observe all sections for animation
-        document.querySelectorAll('.section').forEach(section => {
-            observer.observe(section);
+
+        // Observe all animatable elements
+        document.querySelectorAll('.animate-in, .animate-in-delay-1, .animate-in-delay-2, .animate-in-delay-3').forEach(element => {
+            observer.observe(element);
         });
+
+        // Enhanced particle effect for hero section
+        function createParticles() {
+            const heroSection = document.querySelector('.hero-section');
+            if (!heroSection) return;
+
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.cssText = `
+                    position: absolute;
+                    width: ${Math.random() * 4 + 1}px;
+                    height: ${Math.random() * 4 + 1}px;
+                    background: ${Math.random() > 0.5 ? 'var(--primary-color)' : 'var(--accent-color)'};
+                    border-radius: 50%;
+                    top: ${Math.random() * 100}%;
+                    left: ${Math.random() * 100}%;
+                    opacity: ${Math.random() * 0.5 + 0.1};
+                    animation: floatParticle ${Math.random() * 10 + 10}s linear infinite;
+                    pointer-events: none;
+                `;
+                heroSection.appendChild(particle);
+            }
+        }
+
+        // Add particle animation keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes floatParticle {
+                0% { transform: translateY(0px) translateX(0px); }
+                33% { transform: translateY(-20px) translateX(10px); }
+                66% { transform: translateY(-40px) translateX(-10px); }
+                100% { transform: translateY(-60px) translateX(0px); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Initialize particles
+        createParticles();
+
+        // Enhanced hover effects for project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+
+        // Typing effect for hero subtitle
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.textContent = '';
+            function type() {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Apply typing effect to hero subtitle
+        const heroSubtitle = document.querySelector('.hero-subtitle');
+        if (heroSubtitle) {
+            const originalText = heroSubtitle.textContent;
+            setTimeout(() => {
+                typeWriter(heroSubtitle, originalText, 80);
+            }, 1000);
+        }
         
         // Back to Top Button
         const backToTopBtn = document.getElementById('back-to-top');
